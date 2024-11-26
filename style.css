@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(d.avif);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color:  #ce937f;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo img {
+    width: 250px;
+    margin-left:-130px;
+    margin-top: -10px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 15px; 
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-left: 20px;
+    margin-top: -30px;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ce937f ;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.nav-menu a:hover {
+    background-color: #6d4c41;
+    color: #fff;
+}
+
+.nav-menu .active a {
+    background-color: #6d4c41;
+    color: #fff;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px); 
+    left: 0;
+    background-color: #f8ebe6; 
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    min-width: 200px;
+}
+
+.sub-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-menu li {
+    padding: 10px 15px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.sub-menu li a {
+    color: #3e2723;
+    display: block;
+}
+
+.sub-menu li:hover {
+    background-color: #6d4c41;
+    color: #fff;
+}
+
+.nav-menu li:hover .sub-menu {
+    display: block; 
+}
+
+.has-submenu:hover .sub-menu {
+    display: block; 
+}
+
+.title {
+    text-align: center;
+    color:  #ce937f;
+    text-shadow: 2px 2px #6d4c41;
+    margin-top: 75px;
+}
+
+.title h1 {
+    font-size: 70px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    border: 2px solid  #ce937f;
+    padding: 10px 30px;
+    color:  #ce937f;
+    background-color: transparent;
+    border-radius: 25px;
+    transition: background-color 0.5s, color 0.5s;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #6d4c41;
+    color: #fff;
+}
